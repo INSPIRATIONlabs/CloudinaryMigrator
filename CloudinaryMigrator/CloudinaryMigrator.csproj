@@ -5,6 +5,7 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>CloudinaryMigrator</ToolCommandName>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

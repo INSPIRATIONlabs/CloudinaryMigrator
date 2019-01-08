@@ -76,7 +76,14 @@ namespace CloudinaryMigrator
                         UseFilename = true,
                         UniqueFilename = false
                     };
-                    cloudinary.Upload(uploadParams);
+                    try
+                    {
+                        cloudinary.Upload(uploadParams);
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine(e.Message);
+                    }
                 });
             });
             Console.ReadKey();
